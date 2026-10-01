@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Resilia Advisory | Debt Advisory Singapore</title>
+<meta name="description" content="Resilia Advisory provides confidential debt advisory services in Singapore, including Debt Repayment Scheme and bankruptcy advisory.">
+
+<style>
+*{
+  box-sizing:border-box;
+  scroll-behavior:smooth;
+}
+
+body{
+  margin:0;
+  font-family:Arial,Helvetica,sans-serif;
+  color:#172033;
+  background:#fff;
+  line-height:1.6;
+}
+
+header{
+  position:sticky;
+  top:0;
+  z-index:100;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  padding:18px 7%;
+  background:#fff;
+  box-shadow:0 2px 12px rgba(0,0,0,.08);
+}
+
+.logo-name{
+  display:block;
+  color:#06366f;
+  font-size:27px;
+  font-weight:800;
+  letter-spacing:6px;
+}
+
+.logo-tag{
+  display:block;
+  color:#dc7a00;
+  font-size:10px;
+  font-weight:bold;
+  letter-spacing:2.5px;
+}
+
+nav{
+  display:flex;
+  gap:25px;
+}
+
+nav a{
+  color:#172033;
+  text-decoration:none;
+  font-weight:600;
+  font-size:14px;
+}
+
+nav a:hover{
+  color:#dc7a00;
+}
+
+.hero{
+  min-height:650px;
+  display:flex;
+  align-items:center;
+  padding:80px 7%;
+  background:linear-gradient(135deg,#f7fbff,#e8f2fc);
+}
+
+.hero-content{
+  max-width:780px;
+}
+
+.eyebrow{
+  color:#dc7a00;
+  font-size:14px;
+  font-weight:bold;
+  letter-spacing:2px;
+  text-transform:uppercase;
+}
+
+.hero h1{
+  margin:15px 0;
+  color:#06366f;
+  font-size:clamp(50px,7vw,82px);
+  line-height:1.03;
+}
+
+.hero h2{
+  margin:20px 0 10px;
+  color:#102f56;
+  font-size:29px;
+}
+
+.hero p{
+  max-width:700px;
+  color:#596575;
+  font-size:18px;
+}
+
+.buttons{
+  display:flex;
+  gap:15px;
+  flex-wrap:wrap;
+  margin-top:30px;
+}
+
+.btn{
+  display:inline-block;
+  padding:15px 24px;
+  border-radius:8px;
+  text-decoration:none;
+  font-weight:bold;
+}
+
+.btn-primary{
+  color:white;
+  background:#06366f;
+}
+
+.btn-whatsapp{
+  color:white;
+  background:#1eae5b;
+}
+
+section{
+  padding:85px 7%;
+}
+
+.section-title{
+  margin:0 0 15px;
+  color:#06366f;
+  font-size:38px;
+  text-align:center;
+}
+
+.section-intro{
+  max-width:800px;
+  margin:0 auto 45px;
+  color:#667180;
+  text-align:center;
+  font-size:17px;
+}
+
+.about{
+  background:#fff;
+}
+
+.why{
+  background:#f7f9fc;
+}
+
+.cards{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  gap:20px;
+}
+
+.card{
+  padding:30px;
+  background:#fff;
+  border-radius:12px;
+  box-shadow:0 6px 22px rgba(0,0,0,.06);
+}
+
+.card h3{
+  margin-top:0;
+  color:#06366f;
+}
+
+.services{
+  background:#fff;
+}
+
+.service-grid{
+  max-width:950px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+.service{
+  padding:40px;
+  border:1px solid #e1e7ee;
+  border-radius:14px;
+}
+
+.service h3{
+  color:#06366f;
+  font-size:25px;
+}
+
+.process{
+  background:#06366f;
+  color:white;
+}
+
+.process .section-title,
+.process .section-intro{
+  color:white;
+}
+
+.steps{
+  max-width:1100px;
+  margin:auto;
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.step{
+  padding:25px;
+  background:rgba(255,255,255,.1);
+  border-radius:10px;
+}
+
+.step-number{
+  color:#ffad3d;
+  font-size:28px;
+  font-weight:bold;
+}
+
+.faq{
+  background:#f7f9fc;
+}
+
+.faq-container{
+  max-width:850px;
+  margin:auto;
+}
+
+details{
+  margin-bottom:12px;
+  padding:20px;
+  background:white;
+  border-radius:8px;
+}
+
+summary{
+  cursor:pointer;
+  color:#06366f;
+  font-weight:bold;
+}
+
+.contact{
+  text-align:center;
+}
+
+.contact-box{
+  max-width:750px;
+  margin:auto;
+  padding:40px;
+  background:#f7f9fc;
+  border-radius:14px;
+}
+
+footer{
+  padding:45px 7%;
+  color:#dce5ef;
+  text-align:center;
+  background:#031f43;
+}
+
+.disclaimer{
+  max-width:900px;
+  margin:25px auto 0;
+  color:#aebccc;
+  font-size:12px;
+}
+
+.floating-whatsapp{
+  position:fixed;
+  right:22px;
+  bottom:22px;
+  width:62px;
+  height:62px;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  color:white;
+  background:#1eae5b;
+  border-radius:50%;
+  text-decoration:none;
+  font-size:27px;
+  box-shadow:0 7px 22px rgba(0,0,0,.25);
+}
+
+@media(max-width:850px){
+
+  header{
+    flex-direction:column;
+    gap:15px;
+  }
+
+  nav{
+    justify-content:center;
+    flex-wrap:wrap;
+    gap:14px;
+  }
+
+  .hero{
+    min-height:600px;
+    padding:60px 25px;
+  }
+
+  .hero h1{
+    font-size:48px;
+  }
+
+  section{
+    padding:65px 25px;
+  }
+
+  .cards,
+  .service-grid,
+  .steps{
+    grid-template-columns:1fr;
+  }
+
+  .buttons{
+    flex-direction:column;
+  }
+
+  .btn{
+    text-align:center;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div>
+<span class="logo-name">RESILIA</span>
+<span class="logo-tag">RESET • RENEW • RISE</span>
+</div>
+
+<nav>
+<a href="#home">Home</a>
+<a href="#about">About</a>
+<a href="#services">Services</a>
+<a href="#process">How It Works</a>
+<a href="#faq">FAQ</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+
+<section class="hero" id="home">
+
+<div class="hero-content">
+
+<div class="eyebrow">Resilia Advisory</div>
+
+<h1>RESET.<br>RENEW. RISE.</h1>
+
+<h2>Take the first step towards regaining financial control.</h2>
+
+<p>
+Facing debt can feel overwhelming. Resilia Advisory provides
+confidential, practical guidance to help individuals understand
+their financial situation and the options available to them.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary" href="#contact">
+Request a Consultation
+</a>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/6589767579?text=Hello%20Resilia%20Advisory%2C%20I%20would%20like%20to%20request%20a%20consultation."
+target="_blank">
+WhatsApp Us
+</a>
+
+</div>
+
+</div>
+</section>
+
+
+<section class="about" id="about">
+
+<h2 class="section-title">About Resilia Advisory</h2>
+
+<p class="section-intro">
+Resilia Advisory supports individuals facing debt and financial
+difficulties by providing clear, practical and confidential guidance.
+We help clients understand their circumstances, consider available
+options and take informed steps towards greater financial stability.
+</p>
+
+</section>
+
+
+<section class="why">
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<p class="section-intro">
+We believe every financial situation deserves to be understood
+carefully and treated with respect.
+</p>
+
+<div class="cards">
+
+<div class="card">
+<h3>Confidential</h3>
+<p>Your financial circumstances are handled professionally and discreetly.</p>
+</div>
+
+<div class="card">
+<h3>Experienced</h3>
+<p>Practical guidance focused on Singapore debt and insolvency matters.</p>
+</div>
+
+<div class="card">
+<h3>Personalised</h3>
+<p>Each case is reviewed based on the individual's circumstances.</p>
+</div>
+
+<div class="card">
+<h3>Client-Focused</h3>
+<p>We explain the process clearly so you can make informed decisions.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="services" id="services">
+
+<h2 class="section-title">Our Services</h2>
+
+<p class="section-intro">
+Professional guidance for individuals dealing with serious
+unsecured debt and insolvency concerns.
+</p>
+
+<div class="service-grid">
+
+<div class="service">
+
+<h3>Debt Repayment Scheme (DRS) Advisory</h3>
+
+<p>
+We help individuals understand the Debt Repayment Scheme,
+review their financial circumstances and prepare for the
+relevant assessment and application processes.
+</p>
+
+</div>
+
+
+<div class="service">
+
+<h3>Bankruptcy Advisory</h3>
+
+<p>
+We provide guidance for individuals facing bankruptcy proceedings
+or dealing with bankruptcy-related matters, helping them understand
+the process, documentation and next steps.
+</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="process" id="process">
+
+<h2 class="section-title">How It Works</h2>
+
+<p class="section-intro">
+A straightforward process to understand your situation and determine
+appropriate next steps.
+</p>
+
+<div class="steps">
+
+<div class="step">
+<div class="step-number">01</div>
+<h3>Initial Consultation</h3>
+<p>Tell us about your financial situation and concerns.</p>
+</div>
+
+<div class="step">
+<div class="step-number">02</div>
+<h3>Financial Assessment</h3>
+<p>We review your debts, income and financial circumstances.</p>
+</div>
+
+<div class="step">
+<div class="step-number">03</div>
+<h3>Document Review</h3>
+<p>Relevant financial documents are reviewed where required.</p>
+</div>
+
+<div class="step">
+<div class="step-number">04</div>
+<h3>Available Options</h3>
+<p>We explain potential options based on your circumstances.</p>
+</div>
+
+<div class="step">
+<div class="step-number">05</div>
+<h3>Application Assistance</h3>
+<p>Where applicable, we guide you through the necessary process.</p>
+</div>
+
+<div class="step">
+<div class="step-number">06</div>
+<h3>Ongoing Support</h3>
+<p>We continue to provide guidance as your case progresses.</p>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="faq" id="faq">
+
+<h2 class="section-title">Frequently Asked Questions</h2>
+
+<div class="faq-container">
+
+<details>
+<summary>What is the Debt Repayment Scheme?</summary>
+<p>
+The Debt Repayment Scheme is a pre-bankruptcy scheme administered
+under Singapore's insolvency framework for eligible debtors.
+Eligibility and acceptance depend on the applicable requirements
+and assessment by the relevant authorities.
+</p>
+</details>
+
+<details>
+<summary>Am I automatically eligible for DRS?</summary>
+<p>
+No. Eligibility depends on your individual circumstances and the
+applicable statutory requirements. Being in debt does not automatically
+mean that a person will be placed on the DRS.
+</p>
+</details>
+
+<details>
+<summary>Can Resilia guarantee that my DRS application will be approved?</summary>
+<p>
+No. Resilia Advisory provides advisory and support services but cannot
+guarantee acceptance into any debt or insolvency arrangement.
+</p>
+</details>
+
+<details>
+<summary>Can I speak to someone before deciding?</summary>
+<p>
+Yes. Contact us via WhatsApp to discuss your circumstances and determine
+the appropriate next step.
+</p>
+</details>
+
+</div>
+
+</section>
+
+
+<section class="contact" id="contact">
+
+<h2 class="section-title">Take the First Step</h2>
+
+<p class="section-intro">
+Contact Resilia Advisory for a confidential discussion about your
+financial circumstances.
+</p>
+
+<div class="contact-box">
+
+<h3>Resilia Advisory</h3>
+
+<p>
+190 Woodlands Industrial Park E5 #06-12<br>
+Woodlands Bizhub<br>
+Singapore 757516
+</p>
+
+<p>
+<strong>Email:</strong> info@dflsg.co
+</p>
+
+<p>
+<strong>WhatsApp:</strong> +65 8976 7579
+</p>
+
+<a class="btn btn-whatsapp"
+href="https://wa.me/6589767579?text=Hello%20Resilia%20Advisory%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+target="_blank">
+Chat With Us on WhatsApp
+</a>
+
+</div>
+
+</section>
+
+
+<footer>
+
+<div class="logo-name" style="color:white;">RESILIA</div>
+<div class="logo-tag">RESET • RENEW • RISE</div>
+
+<p>© 2026 Resilia Advisory. All rights reserved.</p>
+
+<div class="disclaimer">
+Resilia Advisory provides advisory and support services and does not
+guarantee acceptance into the Debt Repayment Scheme, bankruptcy outcomes,
+or any other debt solution. Eligibility and outcomes are subject to
+individual circumstances and decisions by the relevant authorities,
+courts and/or creditors where applicable.
+</div>
+
+</footer>
+
+
+<a class="floating-whatsapp"
+href="https://wa.me/6589767579?text=Hello%20Resilia%20Advisory%2C%20I%20would%20like%20to%20make%20an%20enquiry."
+target="_blank"
+aria-label="WhatsApp Resilia Advisory">
+☎
+</a>
+
+</body>
+</html>
